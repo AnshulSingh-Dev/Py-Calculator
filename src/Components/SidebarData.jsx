@@ -1,40 +1,34 @@
-import { HiX } from "react-icons/hi"
-import HomeIcon from '@mui/icons-material/Home';
-import EmailIcon from '@mui/icons-material/Email';
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-import GroupsIcon from '@mui/icons-material/Groups';
-import LogoutIcon from '@mui/icons-material/Logout';
-import LeaderboardIcon from '@mui/icons-material/Leaderboard';
+import {HiChartPie, HiHome, HiLogout, HiMail, HiUser, HiUserGroup } from "react-icons/hi";
 
 export const SidebarData = [
     {
         title: "Home",
-        icon: <HomeIcon/>,
+        icon: <HiHome size={30}/>,
         link: "/home"
     },
     {
         title: "Mails",
-        icon: <EmailIcon/>,
+        icon: <HiMail size={30}/>,
         link: "/mails"
     },
     {
         title: "Accounts",
-        icon: <AccountCircleIcon/>,
+        icon: <HiUser size={30}/>,
         link: "/accounts"
     },
     {
         title: "Analytics",
-        icon: <LeaderboardIcon/>,
+        icon: <HiChartPie size={30}/>,
         link: "/analytics"
     },
     {
         title: "Group",
-        icon: <GroupsIcon/>,
+        icon: <HiUserGroup size={30}/>,
         link: "/group"
     },
     {
         title: "Logout",
-        icon: <LogoutIcon/>,
+        icon: <HiLogout size={30}/>,
         link: "/logout"
     },
 ]
