@@ -30,8 +30,8 @@ function Sidebar(){
   </div>
 
   {/* Sidebar Section */}
-  <div className="sidebar h-full text-black w-64 bg-white p-4">
-    <ul className={`h-auto mt-3 space-y-2 transform ${isOpen ? "translate-x-0" : "-translate-x-full"} transition-transform duration-300`}>
+  <div className={`sidebar shadow-2xl h-full text-black w-64 bg-white p-4 transform ${isOpen ? "translate-x-0" : "-translate-x-full"} transition-transform duration-300`}>
+    <ul className="h-auto mt-3 space-y-2" >
       {SidebarData.map((val, key) => (
         <li
           key={key}
